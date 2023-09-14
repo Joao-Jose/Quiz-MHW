@@ -29,8 +29,8 @@ export default [
         question: "Qual é o proximo da lista ? Rathalos, Legiana, Barioth...",
         answers: [
             { option: "(A) Tigrex ", correct: true },
-            { option: "(A) Yian Garuga ", correct: false },
-            { option: "(A) Pukei-Pukei Coralino ", correct: false },
+            { option: "(B) Yian Garuga ", correct: false },
+            { option: "(C) Pukei-Pukei Coralino ", correct: false },
         ],
     },
 
@@ -38,8 +38,8 @@ export default [
         question: "Na missão de high rank 'Redefinindo o Casal poderoso' você enfrenta quais Monstros ?",
         answers: [
             { option: "(A) Diablos e Diablos Negra", correct: false },
-            { option: "(A) Rathalos e Rathian", correct: true },
-            { option: "(A) Teostra e Lunastra", correct: false },
+            { option: "(B) Rathalos e Rathian", correct: true },
+            { option: "(C) Teostra e Lunastra", correct: false },
         ],
     },
 
@@ -47,8 +47,8 @@ export default [
         question: "Qual adorno é resposável por esta habilidade: 'Aljava' ?",
         answers: [
             { option: "(A) Reforço de capacidade", correct: true },
-            { option: "(A) Muro de Ferro", correct: false },
-            { option: "(A) Artilharia", correct: false },
+            { option: "(B) Muro de Ferro", correct: false },
+            { option: "(C) Artilharia", correct: false },
         ],
     },
 
@@ -56,9 +56,9 @@ export default [
         question: "o Impacto de tal contra-golpe neutraliza empurrões que você recebe, esta frase descreve qual Arma ?",
         answers: [
             { option:"(A) Lâmina Dínamo", correct: false },
-            { option:"(A) Lançarma", correct: false },
-            { option:"(A) Lança", correct: false },
-            { option:"(A) Espadão", correct: true },
+            { option:"(B) Lançarma", correct: false },
+            { option:"(C) Lança", correct: false },
+            { option:"(D) Espadão", correct: true },
         ]
     }
 ]
