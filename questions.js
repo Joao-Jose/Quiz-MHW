@@ -104,9 +104,9 @@ export default [
     {
         question: "Qual Monstro foi lançado junto a Safi'Jiiva ?",
         answers: [
-            { option:"(A) Mel e Poção ancestral", correct: false },
-            { option:"(B) Mel e Poção Máxima", correct: false },
-            { option:"(C) Mel e Mega Nutrientes", correct: false },
+            { option:"(A) Rajang Furioso", correct: false },
+            { option:"(B) Brachydios Colérico", correct: false },
+            { option:"(C) Alatreon", correct: false },
             { option:"(D) Zinogre Tenebroso", correct: true },
         ],
     },

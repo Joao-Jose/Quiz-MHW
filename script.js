@@ -5,6 +5,8 @@ const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
+let timer ;
+let elapsedTime = 0;
 
 import questions from "./questions.js";
 
@@ -29,9 +31,21 @@ function nextQuestion(e) {
     currentIndex++;
     loadQuestion();
   } else {
+    clearInterval(timer);
     finish();
   }
 }
+
+function startTimer() {
+  timer = setInterval(function () {
+    elapsedTime++;
+    const timerElement = document.querySelector(".timer");
+    timerElement.textContent = `${elapsedTime} segundos`;
+  }, 1000); // O temporizador atualiza a cada segundo (1000 milissegundos)
+}
+
+
+
 
 function finish() {
   textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
@@ -60,6 +74,11 @@ function loadQuestion() {
   document.querySelectorAll(".answer").forEach((item) => {
     item.addEventListener("click", nextQuestion);
   });
+
+  if (currentIndex === 0) {
+    startTimer();
+  }
+
 }
 
 loadQuestion();
