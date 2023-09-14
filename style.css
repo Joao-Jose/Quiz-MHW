@@ -18,7 +18,9 @@ body {
 }
 
 body h2 {
-  color: rgb(238, 42, 42);
+  color: rgb(0, 0, 0);
+  font-size: large;
+  padding: 15px;
 }
 
 main {
@@ -70,3 +72,9 @@ button {
 .finish button {
   text-align: center;
 }
+
+.title {
+  color: #f01c1c;
+  font-size: 30px;
+}
+

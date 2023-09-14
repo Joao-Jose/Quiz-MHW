@@ -1,11 +1,14 @@
 const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");
 const spnQtd = document.querySelector(".spnQtd");
+const timerMinutes = document.querySelector(".timerMinutes");
+const timerSeconds = document.querySelector(".timerSeconds");
 const textFinish = document.querySelector(".finish span");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
-let timer ;
+
+let timer;
 let elapsedTime = 0;
 
 import questions from "./questions.js";
@@ -19,6 +22,9 @@ btnRestart.onclick = () => {
 
   currentIndex = 0;
   questionsCorrect = 0;
+  elapsedTime = 0;
+  timerMinutes.textContent = "0";
+  timerSeconds.textContent = "0";
   loadQuestion();
 };
 
@@ -39,16 +45,16 @@ function nextQuestion(e) {
 function startTimer() {
   timer = setInterval(function () {
     elapsedTime++;
-    const timerElement = document.querySelector(".timer");
-    timerElement.textContent = `${elapsedTime} segundos`;
+    const minutes = Math.floor(elapsedTime / 60);
+    const seconds = elapsedTime % 60;
+
+    timerMinutes.textContent = minutes;
+    timerSeconds.textContent = seconds;
   }, 1000); // O temporizador atualiza a cada segundo (1000 milissegundos)
 }
 
-
-
-
 function finish() {
-  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
+  textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
@@ -78,7 +84,6 @@ function loadQuestion() {
   if (currentIndex === 0) {
     startTimer();
   }
-
 }
 
 loadQuestion();
