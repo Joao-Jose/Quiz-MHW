@@ -2,8 +2,8 @@ export default [
     {
       question: "Qual item arremessável é necessário para cegar um monstro?",
       answers: [
-        { option: "(A) Lampejo Inseto", correct: true },
-        { option: "(B) Cápsula de Lampejo", correct: false }, // Correção aqui: "Cápsula" em vez de "Capsula"
+        { option: "(A) Lampejo Inseto", correct: false },
+        { option: "(B) Cápsula de Lampejo", correct: true }, // Correção aqui: "Cápsula" em vez de "Capsula"
         { option: "(C) Mosclarão", correct: false }, // Correção aqui: "Moscarão" em vez de "Mosclarão"
       ],
     },
