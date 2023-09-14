@@ -28,9 +28,9 @@ export default [
     {
         question: "Qual é o proximo da lista ? Rathalos, Legiana, Barioth...",
         answers: [
-            { options: "(A) Tigrex ", correct: true },
-            { options: "(A) Yian Garuga ", correct: false },
-            { options: "(A) Pukei-Pukei Coralino ", correct: false },
+            { option: "(A) Tigrex ", correct: true },
+            { option: "(A) Yian Garuga ", correct: false },
+            { option: "(A) Pukei-Pukei Coralino ", correct: false },
         ],
     },
 
