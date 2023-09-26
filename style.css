@@ -78,3 +78,6 @@ button {
   font-size: 30px;
 }
 
+#after, #before {
+  width: 10px;
+}
